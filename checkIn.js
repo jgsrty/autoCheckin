@@ -10,10 +10,17 @@ const { getNowTime, pushMsg } = require("./utils");
 const hacpaiSignRequest = async () => {
   console.log(`\n\n------${getNowTime(`toLocaleDateString`)} - 开始签到------\n`);
   const { headers, signInUrl } = nuggets; //签到相关参数
+  const data = {
+    aid: 2608
+    uuid: 7226544547436774916
+    spider: 0
+    msToken: XLRuw0T9GUyl-dm4aN036BmXY96tcdzKhT57aPbcg6pG9cgvQGPB_f8Q7N9Ul9xbQQqVIz4ZiCvVNmXlcv2fuGHIpTn-qC3lmbGwgD9oIzZWJXkyN5pIxlVYjwYLmpM%3D
+  }
   const res = await axios({
     url: signInUrl,
     method: `post`,
     headers,
+    data
   });
   if (res && res.data && res.data.err_no !== 403) {
     console.log(`\n ${JSON.stringify(res.data)} \n \n ------ ${getNowTime(`toLocaleTimeString`)} 签到成功 ------\n`);
