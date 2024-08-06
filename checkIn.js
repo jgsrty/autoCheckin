@@ -14,7 +14,7 @@ const hacpaiSignRequest = async () => {
     aid: 2608,
     uuid: 7226544547436774916,
     spider: 0,
-    msToken: XLRuw0T9GUyl-dm4aN036BmXY96tcdzKhT57aPbcg6pG9cgvQGPB_f8Q7N9Ul9xbQQqVIz4ZiCvVNmXlcv2fuGHIpTn-qC3lmbGwgD9oIzZWJXkyN5pIxlVYjwYLmpM%3D
+    msToken: 'XLRuw0T9GUyl-dm4aN036BmXY96tcdzKhT57aPbcg6pG9cgvQGPB_f8Q7N9Ul9xbQQqVIz4ZiCvVNmXlcv2fuGHIpTn-qC3lmbGwgD9oIzZWJXkyN5pIxlVYjwYLmpM%3D'
   }
   const res = await axios({
     url: signInUrl,
