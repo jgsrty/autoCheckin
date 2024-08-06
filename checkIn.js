@@ -22,7 +22,7 @@ const hacpaiSignRequest = async () => {
     headers,
     data
   });
-  console.log(`\n ${JSON.stringify(res)} \n \n ------ 签到返回res ------\n`);
+  console.log(`\n ${res} \n \n ------ 签到返回res ------\n`);
   if (res && res.data && res.data.err_no !== 403) {
     console.log(`\n ${JSON.stringify(res.data)} \n \n ------ ${getNowTime(`toLocaleTimeString`)} 签到成功 ------\n`);
     //签到成功后推送消息
